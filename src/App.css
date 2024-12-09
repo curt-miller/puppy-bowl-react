@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar{
+  width: 100vw;
+  background-color: red;
+}
+
+#container{
+  background-color: blue;
+}
+
+.player-card{
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+text-align: center;
+max-width: fit-content;
+}
+
+.player-card img{
+  max-width: 200px;
+  height: auto;
+}
+
+.allplayers{
+display: flex;
+flex-wrap: wrap;
+}
