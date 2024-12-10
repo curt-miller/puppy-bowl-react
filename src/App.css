@@ -81,6 +81,7 @@
   position: fixed;
   top: 0;
   width: 50vw;
+  max-width: 600px;
   height: 100%;
   background-color: rgb(159, 89, 56);
   padding: 20px;
@@ -94,8 +95,9 @@
 }
 
 .details-pane img {
-  height: 70vh;
-  max-width: 50vw;
+  /* height: 70vh; */
+  width: 40vw;
+  max-width: 580px;
   margin-right: 2vw;
   border-radius: 8%;
 }
