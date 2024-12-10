@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  cursor: url(/public/dog-cursor30.png), auto;
 }
 
 #navbar {
@@ -121,10 +122,11 @@
   margin: 4px;
   padding: 2px;
   filter: drop-shadow(0 0 .3rem rgb(71, 16, 15));
+  cursor: url(/public/cat-cursor30.png), auto;
 }
 
 button:hover {
-  cursor: pointer;
+  cursor: url(/public/cat-cursor30.png), auto;
 }
 
 
@@ -151,3 +153,4 @@ button:hover {
   padding: 6px;
   width: 6rem;
 }
+
