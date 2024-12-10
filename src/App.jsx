@@ -4,7 +4,7 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 import AllPlayers from './components/AllPlayers';
 import NavBar from './components/NavBar';
 import NewPlayerForm from './components/NewPlayerForm';
-import Details from './components/Details';
+import DetailsPane from './components/DetailsPane';
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<AllPlayers />} />
           <Route path="/newplayer" element={<NewPlayerForm />} />
-          <Route path="players/:id" element={<Details/>} />
         </Routes>
       </div>
     </div>

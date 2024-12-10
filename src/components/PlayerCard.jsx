@@ -2,11 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { removePlayer } from "../API";
 
-export default function PlayerCard({ id, name, breed, status, imageUrl, players, setPlayers }) {
-    const navigate = useNavigate();
-    const handleDetails = () => {
-        navigate(`/players/${id}`);
-    }
+export default function PlayerCard({ id, name, breed, status, imageUrl, onSelect, setPlayers }) {
 
     const handleRemove = async () => {
         const result = await removePlayer(id);
@@ -26,7 +22,7 @@ export default function PlayerCard({ id, name, breed, status, imageUrl, players,
             <p>Breed: {breed}</p>
             <p>Status: {status}</p>
             <button onClick={handleRemove}>Remove Player</button>
-            <button onClick={handleDetails}>Expand Details</button>
+            <button onClick={onSelect}>Expand Details</button>
         </div>
     )
 }

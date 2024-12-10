@@ -37,28 +37,28 @@ export default function NewPlayerForm() {
     return (
         <div className="newplayerform">
             <form>
-                <label>Player Name:
+                <label>Player Name:{" "}
                     <input
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                    />
+                    />       
                 </label>
-                <label>Player Breed:
+                <label>Player Breed:{" "}
                     <input
                         type="text"
                         value={breed}
                         onChange={(e) => setBreed(e.target.value)}
                     />
                 </label>
-                <label>Image URL:
+                <label>Image URL:{" "}
                     <input type="text"
                         value={imageUrl}
                         onChange={(e) => setImageUrl(e.target.value)} />
                 </label>
             </form>
-            <button onClick={handleSubmit}>Submit</button>
-            {successMessage && <p>{successMessage}</p>}
+            <button id="submit-button" onClick={handleSubmit}>Submit</button>
+            {successMessage && <p id="success-message">{successMessage}</p>}
         </div>
     )
 }
