@@ -51,6 +51,7 @@ export default function AllPlayers() {
                     <PlayerCard
                         key={player.id}
                         id={player.id}
+                        players={players}
                         name={player.name}
                         breed={player.breed}
                         status={player.status}

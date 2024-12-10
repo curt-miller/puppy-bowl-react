@@ -52,7 +52,7 @@ export const removePlayer = async (id) => {
     const json = await response.json();
     return json;
   } catch (error) {
-    console.error("error reomving player");
+    console.error("error removing player");
     return null;
   }
 };

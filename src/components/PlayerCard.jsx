@@ -1,15 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { removePlayer } from "../API";
 
-export default function PlayerCard({ id, name, breed, status, imageUrl, onSelect, setPlayers }) {
+export default function PlayerCard({ id, name, breed, status, imageUrl, onSelect, setPlayers, players }) {
 
     const handleRemove = async () => {
         const result = await removePlayer(id);
         if (result) {
             console.log("succesfully removed", { id });
             const updatedPlayers = players.filter(player => player.id !== id);
+            console.log(updatedPlayers);
             setPlayers(updatedPlayers);
+
+            
+
+            return setPlayers
         } else {
             console.error("failed to remove player");
         }
